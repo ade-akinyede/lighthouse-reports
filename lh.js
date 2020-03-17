@@ -4,6 +4,9 @@ const argv = require('yargs').argv
 const url = require('url')
 const fs = require('fs')
 
+
+const rootReportsDir = 'reports/'
+
 async function launchChromeAndRunLighthouse(urlArg) {
     try {
         console.log("Launching chrome...")
@@ -45,8 +48,8 @@ function replaceSlashesWithUnderscore(path = "") {
 
 if (argv.url) {
     const urlObj = new URL(argv.url)
-    // Get rid of www part in the URL
-    let dirName = stripWWWFromURLObject(urlObj)
+    // Construct directory path and get rid of www part in the URL
+    let dirName = rootReportsDir + stripWWWFromURLObject(urlObj)
 
     // Replace slashes with underscores if the URL has a pathname, as slashes are invalid 
     // character for directory names, and append to dirName
