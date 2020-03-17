@@ -1,0 +1,20 @@
+{
+  "name": "lighthousereports",
+  "version": "1.0.0",
+  "description": "Record and Compare Google Lighthouse Reports for Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "google",
+    "lighthouse",
+    "reports"
+  ],
+  "author": "Ade Akinyede",
+  "license": "ISC",
+  "devDependencies": {
+    "lighthouse": "^5.6.0",
+    "yargs": "^15.3.1"
+  }
+}
