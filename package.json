@@ -14,7 +14,7 @@
   "author": "Ade Akinyede",
   "license": "ISC",
   "devDependencies": {
-    "lighthouse": "^5.6.0",
+    "lighthouse": "^9.6.7",
     "yargs": "^15.3.1"
   }
 }
